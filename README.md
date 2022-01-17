@@ -1,4 +1,4 @@
-# Harshit-Badaya.github.io
+# https://harshit-badaya.netlify.app/
 Personal Portfolio Website
 
 Harshit Badaya | Front End Developer | Software Enginner | Web Developer
