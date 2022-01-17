@@ -1,366 +1,458 @@
 <!DOCTYPE html>
-<html class="cspio">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>New Page</title>
-
-    <meta name="generator" content="comingsoonpage.com 1.0.0" />
-    <meta name="description" content="">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="http://" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="New Page" />
-    <meta property="og:description" content="" />
-
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Bootstrap and default Style -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://static.comingsoonpage.com/cspio-assets/1.0.0/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/siteico.png" />
 
 
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Google Fonts -->
-
-    <link class="gf-button" href='https://fonts.googleapis.com/css?family=Open+Sans:400&subset=' rel='stylesheet' type='text/css'>
-
-    <!-- RTL -->
-
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
 
-
-
-
-    <!-- Calculated Styles -->
-    <style type="text/css">
-        /* Background Style */
-        
-        html {
-            height: 100%;
-            background: #182333 url(https://images.unsplash.com/19/desktop.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=a34f9ab9f4a1371edf12bf5daa5f132c) no-repeat center top fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-        
-        #cspio-page {
-            background-color: rgba(237, 45, 2, 0.85);
-        }
-        
-        .flexbox #cspio-page {
-            align-items: flex-start;
-            justify-content: center;
-        }
-        
-        .cspio body {
-            background: transparent;
-        }
-        /* Text Styles */
-        
-        .cspio body,
-        .cspio body p {
-            font-family: 'Trebuchet MS', Helvetica, sans-serif;
-            font-weight: 400;
-            font-style: ;
-            font-size: 16px;
-            line-height: 1.42em;
-            color: #ffffff;
-        }
-        
-         ::-webkit-input-placeholder {
-            font-family: 'Trebuchet MS', Helvetica, sans-serif;
-            font-weight: 400;
-            font-style: ;
-        }
-        
-         ::-moz-placeholder {
-            font-family: 'Trebuchet MS', Helvetica, sans-serif;
-            font-weight: 400;
-            font-style: ;
-        }
-        /* firefox 19+ */
-        
-         :-ms-input-placeholder {
-            font-family: 'Trebuchet MS', Helvetica, sans-serif;
-            font-weight: 400;
-            font-style: ;
-        }
-        /* ie */
-        
-         :-moz-placeholder {
-            font-family: 'Trebuchet MS', Helvetica, sans-serif;
-            font-weight: 400;
-            font-style: ;
-        }
-        
-        .cspio h1,
-        .cspio h2,
-        .cspio h3,
-        .cspio h4,
-        .cspio h5,
-        .cspio h6 {
-            color: #ffffff;
-        }
-        
-        #cspio-headline {
-            font-family: 'Trebuchet MS', Helvetica, sans-serif;
-            font-weight: 400;
-            font-style: ;
-            font-size: 42px;
-            color: #ffffff;
-            line-height: 1.06em;
-        }
-        
-        .cspio button {
-            font-family: 'Open Sans';
-            font-weight: 400;
-            font-style: ;
-        }
-        /* Link Styles */
-        
-        .cspio a,
-        .cspio a:visited,
-        .cspio a:hover,
-        .cspio a:active {
-            color: #ffffff;
-        }
-        
-        #cspio-socialprofiles a {
-            color: #ffffff;
-        }
-        
-        .cspio .btn-primary,
-        .cspio .btn-primary:focus,
-        .gform_button,
-        #mc-embedded-subscribe,
-        .mymail-wrapper .submit-button {
-            color: black;
-            text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
-            background-color: #ffffff;
-            background-image: -moz-linear-gradient(top, #ffffff, #d9d9d9);
-            background-image: -ms-linear-gradient(top, #ffffff, #d9d9d9);
-            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#d9d9d9));
-            background-image: -webkit-linear-gradient(top, #ffffff, #d9d9d9);
-            background-image: -o-linear-gradient(top, #ffffff, #d9d9d9);
-            background-image: linear-gradient(top, #ffffff, #d9d9d9);
-            background-repeat: repeat-x;
-            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d9d9d9', GradientType=0);
-            border-color: #d9d9d9 #d9d9d9 #b3b3b3;
-            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-            *background-color: #d9d9d9;
-            filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
-        }
-        
-        .cspio .btn-primary:hover,
-        .cspio .btn-primary:active,
-        .cspio .btn-primary.active,
-        .cspio .btn-primary.disabled,
-        .cspio .btn-primary[disabled],
-        .cspio .btn-primary:focus:hover,
-        .cspio .btn-primary:focus:active,
-        .cspio .btn-primary:focus.active,
-        .cspio .btn-primary:focus.disabled,
-        .cspio .btn-primary:focus[disabled],
-        .gform_button:hover,
-        .gform_button:active,
-        .gform_button.active,
-        .gform_button.disabled,
-        .gform_button[disabled],
-        #mc-embedded-subscribe:hover,
-        #mc-embedded-subscribe:active,
-        #mc-embedded-subscribe.active,
-        #mc-embedded-subscribe.disabled,
-        #mc-embedded-subscribe[disabled],
-        .mymail-wrapper .submit-button:hover,
-        .mymail-wrapper .submit-button:active,
-        .mymail-wrapper .submit-button.active,
-        .mymail-wrapper .submit-button.disabled,
-        .mymail-wrapper .submit-button[disabled] {
-            background-color: #d9d9d9;
-            *background-color: #cccccc;
-        }
-        
-        .cspio .btn-primary:active,
-        .cspio .btn-primary.active,
-        .cspio .btn-primary:focus:active,
-        .cspio .btn-primary:focus.active,
-        .gform_button:active,
-        .gform_button.active,
-        #mc-embedded-subscribe:active,
-        #mc-embedded-subscribe.active,
-        .mymail-wrapper .submit-button:active,
-        .mymail-wrapper .submit-button.active {
-            background-color: #bfbfbf \9;
-        }
-        
-        .form-control,
-        .progress {
-            background-color: #ffffff;
-        }
-        
-        #cspio-progressbar span,
-        .countdown_section {
-            color: black;
-            text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
-        }
-        
-        .cspio .btn-primary:hover,
-        .cspio .btn-primary:active {
-            color: black;
-            text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
-            border-color: #e6e6e6;
-        }
-        
-        .cspio input[type='text']:focus {
-            webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 217, 217, 0.6);
-            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 217, 217, 0.6);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 217, 217, 0.6);
-        }
-        
-        #cspio-content {
-            max-width: 700px;
-            background-color: #000000;
-            -webkit-border-radius: 2px;
-            border-radius: 2px;
-            -moz-background-clip: padding;
-            -webkit-background-clip: padding-box;
-            background-clip: padding-box;
-        }
-        
-        .cspio .progress-bar,
-        .countdown_section,
-        .cspio .btn-primary,
-        .cspio .btn-primary:focus,
-        .gform_button {
-            background-image: none;
-            text-shadow: none;
-        }
-        
-        .countdown_section,
-        .cspio .progress-bar {
-            -webkit-box-shadow: none;
-            box-shadow: none;
-        }
-        
-        .cspio input,
-        .cspio input:focus {
-            -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-        }
-        
-        html {
-            height: 100%;
-            overflow: hidden;
-        }
-        
-        body {
-            height: 100%;
-            overflow: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        
-        input,
-        button,
-        .cspio .progress,
-        .countdown_section {
-            border-radius: 90px !important;
-            border: none !important;
-        }
-        
-         ::-webkit-input-placeholder {
-            color: #333 !important;
-        }
-        
-         ::-moz-placeholder {
-            color: #333 !important;
-        }
-        /* firefox 19+ */
-        
-         :-ms-input-placeholder {
-            color: #333 !important;
-        }
-        /* ie */
-        
-        input:-moz-placeholder {
-            color: #333 !important;
-        }
-    </style>
-    <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- FitVid -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
-    <!-- Scripts -->
-    <script src="https://static.comingsoonpage.com/cspio-assets/1.0.0/scripts.js"></script>
-    <!-- Modernizr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <!-- Retina JS -->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>-->
-    <!-- Tubular -->
-
-
-    <!-- Header Scripts -->
-
-    <!-- Google Analytics -->
+    <title>Harshit Badaya | Portfolio </title>
 </head>
 
 <body>
-    <div id="cspio-page">
-        <div id="cspio-content">
-            <img id="cspio-logo" src="https://static.comingsoonpage.com/13665/C8xmh3hVR9e3A6YHIZO6_Black and Red Gaming YouTube Channel Art (1).png">
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div>
+                <a href="#" class="nav__logo">Harshit</a>
+            </div>
 
-            <h1 id="cspio-headline">Portfolio is Coming Soon</h1>
-            <div id="cspio-description">Get ready ! Something really cool is coming!</div>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">Works</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link"> Contact me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="./assets/img/icon2.png" alt="">
+                    </div>
+                    <h1 class="home__title">Harshit Badaya</h1>
+                    <span class="home__profession"> Software Engineer</span>
+
+                    <div class="home__social">
+                        <a href="#" class="home__social-link"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="#" class="home__social-link"><i class='bx bxl-github' ></i></a>
+                        <a href="#" class="home__social-link"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#" class="home__social-link"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                    <a download href="assets/docs/Harshit_Badaya_CV.pdf" class="button home__button">Download Resume <i class='bx bxs-download'></i></a>
+                </div>
+            </div>
+        </section>
 
 
 
-            <div id="cspio-socialprofiles">
-                <a href="https://linkedin.com/in/harshit-badaya" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
-                <a href="https://github.com/Harshit-Badaya" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <span class="section-subtitle">My Intro</span>
+            <h2 class="section-title"> About me</h2>
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <p class="about__description">Responsible, Diligent, Punctual, and an Inspired Engineer and Always passionate and dedicated about my work. A Self-taught Web developer and Software Engineer/Developer</p>
+                    <img src="/assets/img/about.png" alt="about" class="about__img">
+                </div>
+                <div>
+                    <div class="about__information">
+                        <h3 class="about__information-title">Information</h3>
+                        <div class="about__information-data">
+                            <i class='bx bx-user about__information-icon'></i>
+                            <span>Harshit Badaya</span>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bx-phone about__information-icon'></i>
+                            <span>+91-7898606078</span>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bx-envelope about__information-icon'></i>
+                            <span>connect@harshitbadaya.in</span>
+                        </div>
+                    </div>
+                    <div class="about__information">
+                        <h3 class="about__information-title">Experince and Support</h3>
+                        <div class="about__information-data">
+                            <i class='bx bx-medal about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">2 year of Experince</span>
+                                <span class="about__information-subtitle-small">garshhs</span>
+                            </div>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bx-briefcase about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">10+ projects</span>
+                                <span class="about__information-subtitle-small">Compltetd</span>
+                            </div>
+                        </div>
+                        <div class="about__information-data">
+                            <i class='bx bx-support about__information-icon'></i>
+                            <div>
+                                <span class="about__information-subtitle">support</span>
+                                <span class="about__information-subtitle-small">Online 24*7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== SKILLS =====-->
+
+        <section class="skills section" id="skills">
+            <span class="section-subtitle"> Why Choose me</span>
+            <h2 class="section-title">My Expertise Area</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">Frontend</h3>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Html css</span>
+                        <span class="skills__number">80%</span>
+                        <span class="skills__bar skills__html"></span>
+                    </div>
+                    <div class="skills__data">
+                        <span class="skills__name">javascript</span>
+                        <span class="skills__number">40%</span>
+                        <span class="skills__bar skills__js"></span>
+                    </div>
+                    <div class="skills__data">
+                        <span class="skills__name">React</span>
+                        <span class="skills__number">80%</span>
+                        <span class="skills__bar skills__react"></span>
+                    </div>
+                    <div class="skills__data">
+                        <span class="skills__name">Angular</span>
+                        <span class="skills__number">70%</span>
+                        <span class="skills__bar skills__angular"></span>
+                    </div>
+
+
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">Backend</h3>
+
+                    <div class="skills__data">
+                        <span class="skills__name">PHP</span>
+                        <span class="skills__number">40%</span>
+                        <span class="skills__bar skills__php"></span>
+                    </div>
+                    <div class="skills__data">
+                        <span class="skills__name">Node js</span>
+                        <span class="skills__number">40%</span>
+                        <span class="skills__bar skills__node"></span>
+                    </div>
+                    <div class="skills__data">
+                        <span class="skills__name">firebase</span>
+                        <span class="skills__number">80%</span>
+                        <span class="skills__bar skills__firebase"></span>
+                    </div>
+                    <div class="skills__data">
+                        <span class="skills__name">Python</span>
+                        <span class="skills__number">70%</span>
+                        <span class="skills__bar skills__python"></span>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!--===== EDUCATION =====-->
+
+        <section class="education section" id="education">
+            <span class="section-subtitle"> Qualification</span>
+            <h2 class="section-title">My Education</h2>
+
+
+            <div class="education__container bd-grid">
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2015-2019</h3>
+                        <span class="education__university">Univerity of itM</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education__race">BTECH</h3>
+                        <span class="education__specialty">Computer Science</span>
+                    </div>
+
+
+                </div>
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2014</h3>
+                        <span class="education__university">Gayatri Public School</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education__race">12th</h3>
+                        <span class="education__specialty">Science</span>
+                    </div>
+
+
+                </div>
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2011</h3>
+                        <span class="education__university">Wesliyan School</span>
+                    </div>
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education__race">10th</h3>
+                        <span class="education__specialty">Genral St.</span>
+                    </div>
+
+
+                </div>
             </div>
 
 
+        </section>
 
 
+        <!--===== SERVICES =====-->
+
+        <section class="servives section" id="services">
+            <span class="section-subtitle"> What I offer</span>
+            <h2 class="section-title">My Services</h2>
+
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <i class='bx bx-code services__icon'></i>
+                    <h3 class="services__title">Web Design</h3>
+                    <p class="services__description">
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi ? Quis autem vel eum modi
+                    </p>
+                </div>
+                <div class="services__content">
+                    <i class='bx bx-pen services__icon'></i>
+                    <h3 class="services__title">Graphic design</h3>
+                    <p class="services__description">
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi ? Quis autem vel eum modi
+                    </p>
+                </div>
+                <div class="services__content">
+                    <i class='bx bx-globe services__icon'></i>
+                    <h3 class="services__title">Web Development</h3>
+                    <p class="services__description">
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi ? Quis autem vel eum modi
+                    </p>
+                </div>
+                <div class="services__content">
+                    <i class='bx bx-brush services__icon'></i>
+                    <h3 class="services__title">UI & UX</h3>
+                    <p class="services__description">
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi ? Quis autem vel eum modi
+                    </p>
+                </div>
+                <div class="services__content">
+                    <i class='bx bx-mobile services__icon'></i>
+                    <h3 class="services__title">SEO</h3>
+                    <p class="services__description">
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi ? Quis autem vel eum modi
+                    </p>
+                </div>
+                <div class="services__content">
+                    <i class='bx bx-pencil services__icon'></i>
+                    <h3 class="services__title">Freelancing</h3>
+                    <p class="services__description">
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi ? Quis autem vel eum modi
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== PROJECT IN MIND =====-->
+        <section class="project section">
+            <div class="project__container bd-grid">
+                <div class="project__data">
+
+                    <h2 class="section-title project__title">Do you have a project in mind</h2>
+                    <p class="project__description">If you have a project that you want to carry out , do not hesitate and tell me what it is , and what can i help you, Contact me directly here</p>
+                    <a href="#contact" class="button button__light">Contact me</a>
+                </div>
+                <img src="./assets/img/projectmind.png" alt="Project" class="project__img">
+
+
+            </div>
+
+        </section>
+
+        <!--===== WORKS =====-->
+        <section class="works section" id="works">
+            <span class="section-subtitle">My Portfolio</span>
+            <h2 class="section-title">Recent Works</h2>
+
+
+            <div class="works__container bd-grid">
+                <div class="works__img">
+                    <img src="./assets/img/work1.jpg" alt="p1">
+                    <div class="works__data">
+                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                        <span class="works__title">Work 1</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="./assets/img/work2.jpg" alt="p2">
+                    <div class="works__data">
+                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                        <span class="works__title">Work 2</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="./assets/img/work3.jpg" alt="p3">
+                    <div class="works__data">
+                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                        <span class="works__title">Work 3</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="./assets/img/work4.jpg" alt="p4">
+                    <div class="works__data">
+                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                        <span class="works__title">Work 4</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="./assets/img/work5.jpg" alt="p5">
+                    <div class="works__data">
+                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                        <span class="works__title">Work 5</span>
+                    </div>
+                </div>
+                <div class="works__img">
+                    <img src="./assets/img/work6.jpg" alt="p6">
+                    <div class="works__data">
+                        <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                        <span class="works__title">Work 6</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <span class="section-subtitle">Contact Me</span>
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                    </div>
+                    <input type="text" placeholder="Project" class="contact__input">
+                    <textarea name="" id="" rows="10" cols="0" placeholder="Messege" class="contact__input"></textarea>
+                    <input type="submit" class="button contact__button" value="Send Message">
+
+                </form>
+
+
+
+                <div>
+
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Call Me</h3>
+                        <span class="contact_text">+91-7898606078</span>
+                        <span class="contact_text">+91-7000730578</span>
+                    </div>
+
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Email</h3>
+                        <span class="contact_text">connect@harshitbadaya.in</span>
+                        <span class="contact_text">harshitbadaya95@gmail.com</span>
+                    </div>
+
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Location</h3>
+                        <span class="contact_text">Chhattisgarh</span>
+                        <span class="contact_text">India</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--===== FOOTER =====-->
+
+    <footer class="footer section">
+
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title">Harshit</h1>
+
+            <p class="footer__description">I am Harshit Badaya and this is my personal website. consult me here.</p>
+
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-instagram' ></i></a>
+            </div>
+
+            <p class="footer__copy">All Right Reserved by Harshit Badaya</p>
         </div>
-        <!-- end of #seed-cspio-content -->
+    </footer>
 
-
-    </div>
-    </div>
-
-    <script>
-        jQuery(document).ready(function($) {
-            $("#cspio-description,#cspio-thankyoumsg").fitVids();
-        });
-    </script>
-
-    <!-- Animate -->
-
-
-
-    <script>
-        function resize() {
-            $('head').append("<style id='form-style' type='text/css'></style>");
-            $('#form-style').html('.cspio .input-group-btn, .cspio .input-group{display:block;width:100%;}.cspio #cspio-subscribe-btn{margin-left:0;width:100%;display:block;}.cspio .input-group .form-control:first-child, .cspio .input-group-addon:first-child, .cspio .input-group-btn:first-child>.btn, .cspio .input-group-btn:first-child>.dropdown-toggle, .cspio .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {border-bottom-right-radius: 4px;border-top-right-radius: 4px;}.cspio .input-group .form-control:last-child, .cspio .input-group-addon:last-child, .cspio .input-group-btn:last-child>.btn, .cspio .input-group-btn:last-child>.dropdown-toggle, .cspio .input-group-btn:first-child>.btn:not(:first-child) {border-bottom-left-radius: 4px;border-top-left-radius: 4px;}');
-        }
-
-        $('#cspio-content').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-            var width = $('#cspio-field-wrapper').width();
-            //console.log(width);
-            if (width < 480 && width != 0) {
-                resize();
-            }
-        });
-    </script>
-
-
-
-
-
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
